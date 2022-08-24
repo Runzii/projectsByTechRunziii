@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QrCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>QR Code Generator by techRunzii</h1>
+<br></br>
+<p class="text">Create your QR Code for free. Try it now!</p>
+
+<input type="text" id="qr-data" onchange="generateQR()" placeholder="Enter text or URl">
+
+<div id="qrcode"> 
+
+<br>
+<br>
+
+</div>
+
+    <button id="submit">Generate Code</button>
+</body>
+
+<script src="qrcode.min.js"></script>
+<script>
+    var qrdata = document.getElementById('qr-data');
+    var qrcode = new QRCode(document.getElementById('qrcode'));
+
+
+
+
+
+
+    function generateQR(){
+        var data = qrdata.value;
+        qrcode.makeCode(data);
+    }
+</script>
+</html>

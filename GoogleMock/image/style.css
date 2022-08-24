@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: block;
+}
+.container{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+    position: relative;
+    display: flex ;
+    justify-content: center;
+align-items: center;
+margin-top: 50px;
+
+
+}
+
+.flex-bar{
+    
+    display: flex;
+    padding: 5px 10px 0 4px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: 5px 10px 4px, 5px 10px 4px;
+    padding: 10%;
+    border-radius: 60px;
+    
+}
+.search{
+    position: relative;
+    top: -50px;
+    right: -580px;
+    
+}
+
+#databar{ 
+    width: 550px;
+height: 40px;
+border: groove;
+border-radius: 1em;
+margin-top: auto 10px;
+}
